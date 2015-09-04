@@ -1,10 +1,10 @@
 import urllib.request, base64, ssl, json, sys, getpass, time
 
-siteUrl = "https://jira.cinnober.com"
+siteUrl = sys.argv[1]
 username = sys.argv[2]
 password = getpass.getpass("Jira password: ")
 filterId = sys.argv[3]
-output = "C:\Users\lucas.lindstrom\Documents\test.csv"
+output = sys.argv[4]
 
 # fields: key, created, priority, status
 
@@ -28,7 +28,8 @@ def search(filterId):
 
 def getSearchUrlByFilter(filterId):
     filter = getFilter(filterId)
-    return filter[0]["searchUrl"]
+    print(filter)
+    return filter["searchUrl"]
 
 def jsonIssuesListToCsv(issuesList):
     parsedIssueList = ['sep=,',str(len(issuesList["issues"]))]
