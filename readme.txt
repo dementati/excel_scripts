@@ -21,6 +21,6 @@ To use SixSwiss.xlsm:
 2. Click the "Get SIX Swiss data" button in the Excel sheet. Running the script will probably take a while.
    The script is done when the mouse cursor turns back into an arrow and Excel becomes responsive again.
    
-3. A list of ISIN IDs found in the SIX Swiss files but not in the analysis file are pasted into the F
+3. A list of ISIN IDs found in the SIX Swiss files but not in the analysis file are pasted into the G
    column.
    
