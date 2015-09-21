@@ -2,9 +2,9 @@ import urllib.request, base64, ssl, json, sys, getpass, time
 
 siteUrl = sys.argv[1]
 username = sys.argv[2]
-password = getpass.getpass("Jira password: ")
-filterId = sys.argv[3]
-output = sys.argv[4]
+password = sys.argv[3]
+filterId = sys.argv[4]
+output = sys.argv[5]
 
 # fields: key, created, priority, status
 
