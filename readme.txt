@@ -58,4 +58,8 @@
 
 		* JIRA_URL - This should contain the url to the Jira site.
 
+		* LOG_DIR - This is the directory where log files will be written. 
+
+		* LOG_FILENAME - This is the name of the log file the script will produce.
+
 5. To run JiraFilters.xlsm: Run the script by clicking the button labeled "Get jira filters" in the single sheet. A popup dialogue will ask you for your Jira password.
